@@ -151,7 +151,7 @@ function Home(props) {
 
 
             </div>
-            <div className="container" style={{ margin: "20px 0" }}>
+            <div className="container" style={{ margin: "20px 0",     marginBottom: "100px" }}>
 
                 <div className="chart">
                     <h2>Thống kê</h2>

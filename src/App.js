@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link, Switch, Redirect } from 'react-router-dom';
 import Home from './components/home';
 import Footer from './components/footer';
+import NotFound from './components/notfound';
 
 const MenuLink = ({ label, to, activeExtract }) => {
   return (
@@ -25,9 +26,9 @@ function App() {
         <MenuLink to="/home" label="Home" />
       </ul>
       <Switch>
-        <Route path="/" exact component={Home}></Route>
+        <Redirect exact from="/" to="/home" />
         <Route path="/home" component={Home}></Route>
-        
+        <Route component={NotFound}></Route>
       </Switch>
       <Footer></Footer>
     </Router>

@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
 .App {
   text-align: center;
 }
-
+body{
+  font-family: 'Recursive', sans-serif;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
