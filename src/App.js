@@ -22,12 +22,11 @@ function App() {
   return (
     <Router>
       <ul className="nav-bar">
-        <MenuLink to="/" label="Home" activeExtract={true} />
-        <MenuLink to="/about" label="About" />
+        <MenuLink to="/home" label="Home" />
       </ul>
       <Switch>
-        <Route path="/" exact></Route>
-        <Route path="/about" component={Home}></Route>
+        <Route path="/" exact component={Home}></Route>
+        <Route path="/home" component={Home}></Route>
         
       </Switch>
       <Footer></Footer>
