@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+
 const STFooter = styled.div`
     position: fixed;
     background: #2e3a49;
@@ -12,6 +13,7 @@ const STFooter = styled.div`
     align-items: center;
     justify-items: center;
     justify-content: center;
+    z-index:100;
 `
 function Footer(props) {
     return (
