@@ -23,12 +23,13 @@ function App() {
   return (
     <Router>
       <ul className="nav-bar">
-        <MenuLink to="/" label="Home" />
+        <MenuLink label="Home" />
       </ul>
       <Switch>
         {/* <Redirect exact from="/" to="/" /> */}
-        <Route path="/" component={Home}></Route>
+        {/* <Route path="/" component={Home}></Route> */}
         {/* <Route component={NotFound}></Route> */}
+        <Home></Home>
       </Switch>
       <Footer></Footer>
     </Router>
